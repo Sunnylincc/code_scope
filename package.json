@@ -1,0 +1,15 @@
+{
+  "name": "code-scope-cn",
+  "version": "0.1.0",
+  "description": "一个本地优先的代码库理解工具，为 AI 编程助手提供代码结构检索、符号查询与 MCP 上下文服务。",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "codescope": "dist/src/cli.js" },
+  "files": ["dist", "README.md", "docs", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": { "node": ">=20" }
+}
